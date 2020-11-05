@@ -20,7 +20,6 @@ import java.net.URL;
 /**
  * JavaFX App
  */
-
 public class App extends Application {
     @Override
     public void start(Stage stage) throws FileNotFoundException{
