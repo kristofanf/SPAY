@@ -22,6 +22,7 @@ import java.net.URL;
  */
 //tes123
 //tes345
+//tesstring
 public class App extends Application {
     @Override
     public void start(Stage stage) throws FileNotFoundException{
