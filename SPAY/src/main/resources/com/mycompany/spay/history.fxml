@@ -7,12 +7,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.spay.HistoryController">
    <left>
       <AnchorPane prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #1D284D;" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="back1" onAction="#back" layoutX="147.0" layoutY="440.0" mnemonicParsing="false" text="BACK" />
+            <Button fx:id="back1" layoutX="21.0" layoutY="31.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: #ffffff;" text="BACK" textFill="#1d284d" />
          </children>
       </AnchorPane>
    </left>
