@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.spay.HistoryController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #1D284D;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="back1" onAction="#back" layoutX="147.0" layoutY="440.0" mnemonicParsing="false" text="BACK" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tabelHistory" layoutX="5.0" layoutY="90.0" prefHeight="396.0" prefWidth="441.0">
+              <columns>
+                <TableColumn fx:id="col_tanggal" prefWidth="161.0" text="Tanggal" />
+                <TableColumn fx:id="col_bulan" prefWidth="256.0" text="Bulan yang sudah dibayar" />
+              </columns>
+            </TableView>
+            <Text layoutX="95.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RIWAYAT PEMBAYARAN">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
