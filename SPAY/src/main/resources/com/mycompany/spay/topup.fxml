@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.spay.TopUpController">
+   <left>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #1D284D;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="kembaliTP" layoutX="21.0" layoutY="23.0" mnemonicParsing="false" onAction="#kembaliTP" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: #ffffff;" text="BACK" textFill="#1d284d" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="450.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="97.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOP-UP" />
+            <Text fill="WHITE" layoutX="321.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAY" />
+            <Text fill="WHITE" layoutX="201.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HISTORY" />
+            <Text fill="#1d284d" layoutX="147.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOPUP">
+               <font>
+                  <Font name="MS Gothic" size="67.0" />
+               </font>
+            </Text>
+            <Text layoutX="51.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MASUKAN NOMINAL" />
+            <Button fx:id="kirimTopUp" layoutX="50.0" layoutY="374.0" mnemonicParsing="false" onAction="#kirimTP" prefHeight="69.0" prefWidth="350.0" style="-fx-background-color: #1D284D;" text="TOPUP" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="passwordFieldTP" layoutX="50.0" layoutY="273.0" prefHeight="31.0" prefWidth="350.0" promptText="PASSWORD" style="-fx-border-color: #1D284D; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent;" visible="false" />
+            <ComboBox fx:id="nominal" layoutX="48.0" layoutY="173.0" onAction="#openPass" prefHeight="35.0" prefWidth="350.0" promptText="Pilih nominal..." />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
