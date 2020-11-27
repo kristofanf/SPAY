@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.spay.DaftarTransaksiController">
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="155.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TABEL TRANSAKSI" wrappingWidth="390.53955078125">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Text>
+            <Button fx:id="back" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: #1D284D;" text="BACK" textFill="WHITE" />
+            <Text layoutX="20.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FILTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="filterDST" layoutX="16.0" layoutY="126.0" prefHeight="31.0" prefWidth="122.0" promptText="BULAN" />
+            <Button fx:id="got1" layoutX="155.0" layoutY="126.0" mnemonicParsing="false" onAction="#got" style="-fx-background-color: #1D284D;" text="GO" textFill="WHITE" />
+            <TableView fx:id="tabelTransaksi" layoutX="15.0" layoutY="174.0" prefHeight="295.0" prefWidth="670.0">
+              <columns>
+                <TableColumn fx:id="nama" prefWidth="185.0" text="Nama" />
+                <TableColumn fx:id="bulan" prefWidth="202.0" text="Bulan" />
+                  <TableColumn fx:id="tglP" prefWidth="282.0" text="Tanggal Pembayaran" />
+              </columns>
+            </TableView>
+            <Button fx:id="reset" layoutX="209.0" layoutY="126.0" mnemonicParsing="false" onAction="#resetT" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: #1D284D;" text="RESET" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
