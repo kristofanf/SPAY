@@ -84,6 +84,12 @@ public class Register {
                 "Please enter a Date");
             return;
         }
+        
+        if(namad.getText().isEmpty()){
+            showAlert(Alert.AlertType.ERROR, owner, "Form Error!",
+                "Please enter your name");
+            return;
+        }
 
         String emailId = emailIdField.getText();
         DatePicker tanggal_lahir = tanggallahir;
