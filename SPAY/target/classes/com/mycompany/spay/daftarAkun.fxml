@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.spay.DaftarAkunController">
+   <right>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="157.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DAFTAR AKUN SISWA" wrappingWidth="429.0">
+               <font>
+                  <Font name="MS Gothic" size="48.0" />
+               </font>
+            </Text>
+            <TableView fx:id="tabelAkun" layoutX="13.0" layoutY="176.0" prefHeight="295.0" prefWidth="677.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="40.0" text="Id" />
+                <TableColumn fx:id="nd" prefWidth="156.0" text="Nama depan" />
+                  <TableColumn fx:id="nb" prefWidth="139.0" text="nama belakang" />
+                  <TableColumn fx:id="saldo" prefWidth="85.0" text="Saldo" />
+                  <TableColumn fx:id="tl" prefWidth="130.0" text="Tanggal lahir" />
+                  <TableColumn fx:id="email" prefWidth="117.0" text="Email" />
+              </columns>
+            </TableView>
+            <ComboBox fx:id="filterDS" layoutX="13.0" layoutY="130.0" onAction="#filDS" prefHeight="31.0" prefWidth="87.0" promptText="&lt;/&gt;" />
+            <Text layoutX="14.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filter" />
+            <TextField fx:id="filterSaldo" layoutX="110.0" layoutY="130.0" />
+            <Button fx:id="go1" layoutX="304.0" layoutY="130.0" mnemonicParsing="false" onAction="#go" style="-fx-background-color: #1D284D;" text="GO" textFill="WHITE" />
+            <Button fx:id="back" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: #1D284D;" text="BACK" textFill="WHITE" />
+            <Button fx:id="reset" layoutX="365.0" layoutY="130.0" mnemonicParsing="false" onAction="#resetT" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: #1D284D;" text="RESET" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
