@@ -68,19 +68,30 @@ public class LoginController {
         } else {
 
             sessionID = jdbcDao.session(emailId, password);
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("primary.fxml"));
-            Parent root = (Parent) loader.load();
-            PrimaryController p = loader.getController();
-            
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            p.init(sessionID,stage);
-            stage.show();
-            ((Node)event.getSource()).getScene().getWindow().hide();
-            infoBox("Login Successful!", null, "Success");
-            //App.setRoot("primary");
+            if(sessionID == 1){
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("admin.fxml"));
+                Parent root = (Parent) loader.load();
+                AdminController p = loader.getController();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                p.init(sessionID,stage);
 
-          //  infoBox("Login Successful!", null, "Failed");
+                stage.show();
+                ((Node)event.getSource()).getScene().getWindow().hide();
+                infoBox("Login Successful!", null, "Success");
+                
+            }else{
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("primary.fxml"));
+                Parent root = (Parent) loader.load();
+                PrimaryController p = loader.getController();
+
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                p.init(sessionID,stage);
+                stage.show();
+                ((Node)event.getSource()).getScene().getWindow().hide();
+                infoBox("Login Successful!", null, "Success");
+            }
             
         }
     }
