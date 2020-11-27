@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.spay.AdminController">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="250.0" style="-fx-background-color: #1D284D;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="105.0" text="ADMIN" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="450.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="aL" layoutX="235.0" layoutY="150.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#account" prefHeight="150.0" prefWidth="195.0" style="-fx-background-color: #1D284D;">
+               <graphic>
+                  <ImageView fitHeight="135.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@AccountList.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="transaksi" layoutX="20.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#transaksi" prefHeight="150.0" prefWidth="195.0" style="-fx-background-color: #1D284D;">
+               <graphic>
+                  <ImageView fitHeight="131.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@transaksi.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="cari" layoutX="127.5" layoutY="322.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cari" prefHeight="150.0" prefWidth="195.0" style="-fx-background-color: #1D284D;">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cari.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="logout" layoutX="360.0" layoutY="32.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #1D284D;" text="LOGOUT" textFill="WHITE" />
+            <Text fill="#1d284d" layoutX="158.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SPAY">
+               <font>
+                  <Font name="MS Gothic" size="67.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
