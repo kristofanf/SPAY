@@ -1,7 +1,7 @@
-package com.mycompany.databasecoba;
+package com.mycompany.spay;
 
-import static com.mycompany.databasecoba.LoginController.infoBox;
-import static com.mycompany.databasecoba.LoginController.sessionID;
+import static com.mycompany.spay.LoginController.infoBox;
+import static com.mycompany.spay.LoginController.sessionID;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
