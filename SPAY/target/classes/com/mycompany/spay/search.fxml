@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.spay.SearchController">
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="back" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="77.0" style="-fx-background-color: #1D284D;" text="BACK" textFill="WHITE" />
+            <Text layoutX="220.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PENCARIAN" wrappingWidth="260.53955078125">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEARCH" />
+            <TextField fx:id="searchBox" layoutX="91.0" layoutY="97.0" />
+            <TableView fx:id="tabelPencarian" layoutX="15.0" layoutY="146.0" prefHeight="333.0" prefWidth="670.0">
+               <columns>
+                  <TableColumn fx:id="namaPe" prefWidth="185.0" text="Nama" />
+                  <TableColumn fx:id="bulanPe" prefWidth="202.0" text="Bulan" />
+                  <TableColumn fx:id="tglPe" prefWidth="282.0" text="Tanggal Pembayaran" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
