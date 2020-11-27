@@ -320,6 +320,20 @@ public class JdbcDao {
 Calendar cal = Calendar.getInstance();
 System.out.println(dateFormat.format(cal.getTime()));
         LocalDate lde= LocalDate.now();
+        String nama="";
+        try(Connection connection = DriverManager
+            .getConnection(DATABASE_URL);
+                
+            // Step 2:Create a statement using connection object
+            PreparedStatement preparedStatement1 = connection.prepareStatement("SELECT nama_depan,nama_belakang FROM Registration WHERE id ="+sessionID)){
+            ResultSet resultSet = preparedStatement1.executeQuery();
+            nama+= resultSet.getString("nama_depan");
+            nama+= " ";
+            nama+= resultSet.getString("nama_belakang");
+        } catch (SQLException e) {
+            // print SQL exception information
+            printSQLException(e);
+        }
         try (Connection connection = DriverManager
             .getConnection(DATABASE_URL);
                 
