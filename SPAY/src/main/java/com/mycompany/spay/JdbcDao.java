@@ -42,7 +42,7 @@ public class JdbcDao {
     private static final String SELECT_QUERY3 = "SELECT email_id,nama_depan,nama_belakang,tanggal_lahir,password FROM Registration WHERE id = ?";
     private static final String SELECT_QUERY4 = "SELECT saldo FROM Registration WHERE id = ?";
     private static final String SELECT_QUERY5 = "UPDATE Registration SET saldo = ? WHERE id=?";
-    private static final String input1 = "INSERT INTO Pembayaran (bulan,user_id,tanggal) values(?,?,?)";
+    private static final String input1 = "INSERT INTO Pembayaran (bulan,user_id,tanggal,nama_lengkap) values(?,?,?,?)";
     private static final String SELECT_QUERY6 = "SELECT * FROM Pembayaran WHERE user_id = ? AND bulan = ?";
     private static final String SELECT_QUERY7 = "INSERT INTO Feedback (isi,user_id) values(?,?)";
 
@@ -342,6 +342,7 @@ System.out.println(dateFormat.format(cal.getTime()));
             preparedStatement.setString(1,bulan1);
             preparedStatement.setInt(2,sessionID);
             preparedStatement.setDate(3, java.sql.Date.valueOf(lde));
+            preparedStatement.setString(4,nama);
             
 
             System.out.println(preparedStatement);
